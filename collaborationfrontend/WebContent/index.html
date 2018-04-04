@@ -10,7 +10,7 @@
 <style type="text/css">
 body 
 {
-    color: black;
+    color: gray;
     
      font-style: italic;
        font-weight: bold;
@@ -84,7 +84,7 @@ text-shadow:   none ;
                 				<span class="rw-number-notification" ng-if="jobnotifications.length>0">{{jobnotifications.length}}</span></span></a>
                 					<ul class="dropdown-menu">
                 						<li ng-repeat="job in notifications">
-                						<a href="#/jobdetail/{{jobid}}" style="color:red">
+                						<a href="#/jobdetail/{{jobid}}" style="color:pink">
                 						<b>new job notification for "{{job.jobTitle}}"</b> </a></li>                				
                 					</ul>
                 			</li>
@@ -97,15 +97,15 @@ text-shadow:   none ;
                 				</ul>
                 			</li>
                 			
-                			<li><a href="#/chat" ng-show="currentUser.username">Chat</a></li>
+              <li><a href="#/chat" ng-show="currentUser.username">Chat</a></li>
                 			
-                	<li><a href="" ng-show="currentUser.username" ng-click="logout()">logout</a></li>
-					<li><a href="#/register" ng-hide="currentUser.username">Sign Up</a></li>
-					<li><a href="#/login" ng-hide="currentUser.username">Sign In</a></li>
-				</ul>
-			</div>
-			</div>
-			</nav>
+           <li><a href="" ng-show="currentUser.username" ng-click="logout()">logout</a></li>
+	    	<li><a href="#/register" ng-hide="currentUser.username">Sign Up</a></li>
+		<li><a href="#/login" ng-hide="currentUser.username">Sign In</a></li>
+		</ul>
+	</div>
+	</div>
+	</nav>
 </header>
 <div ng-view>
 </div>
@@ -152,7 +152,7 @@ text-shadow:   none ;
 	<div class="navbar navbar-default navbar-fixed-bottom">
 		<div class="container-fluid">
 			<div class="navbar-text pull-left">
-				<p>&copy; 2017 Jayanth</p>
+				<p>&copy; 2018 MANASA</p>
 			</div>
 			
 			<div class="navbar-text noStyle pull-right">
